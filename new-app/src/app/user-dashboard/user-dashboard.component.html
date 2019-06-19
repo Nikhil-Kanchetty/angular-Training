@@ -1,0 +1,19 @@
+<h1>User Dashboard</h1>
+
+<p><span>User Name:</span> {{userName}}</p>
+<p><span>Age: </span>{{userAge}}</p>
+<p><span>Attendence Percentage: </span>{{userAttendence}}</p>
+
+<div class="container">
+
+  <label class="name">User Status: </label>
+  <label class="switch" >
+      <input id="toggleBtn" type="checkbox" [(ngModel)]="isbtnStatus" (click)="changeAttendenceStatus()" />
+    <span class="slider round"></span>
+  </label>   
+
+</div>
+
+<p id="attendenceStatus">{{userStatus}}</p> 
+<button class="btnUserAttendence" [routerLink]="['/userAttendence', {id: userId}]">User Attendence</button>
+<button class="btnHomePage" routerLink='/home'>Log out</button>

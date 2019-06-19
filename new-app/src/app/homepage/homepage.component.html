@@ -1,0 +1,10 @@
+<h1>List of users</h1>
+
+<div class="container">
+
+  <div class="contentTiles" *ngFor = "let item of userData">
+    <a [routerLink]="['/userdashboard',{id:item.id}]" class="navbar">{{ item.name }}</a> 
+    <!-- <a [routerLink]="['/userdashboard']" [skipLocationChange] = 'true'  [queryParams]="{id: item.id}" class="navbar">{{ item.name }}</a> -->
+  </div>
+
+</div>

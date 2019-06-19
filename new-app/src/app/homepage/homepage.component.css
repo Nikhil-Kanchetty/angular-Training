@@ -1,0 +1,33 @@
+/* style for the top navigation bar */
+.navbar{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 75px 75px;
+    margin: 15px 45px;
+    background-color: grey;
+    display: block;
+}
+
+/* style for the container class */
+.container{
+    text-align: center;
+    margin-left: auto;
+    width: 80%;
+    height: 800px;
+}
+
+a:hover {
+    box-shadow: 0 0 10px 1px #8f8d8d;
+    transition-duration: .5s;
+}
+
+/* style for the header */
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    line-height: 27px;
+    padding: 20px 0px;
+}

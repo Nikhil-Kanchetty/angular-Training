@@ -1,0 +1,19 @@
+
+<h1 class="pageHeader">Attendence details<button class="btnHomePage" routerLink='/home'>Log out</button></h1>
+
+<div class="centerContent">
+  <div class="container" *ngFor = "let item of userDataById">
+
+    <div class="contentBox">
+      <div class="itemName">User Name: {{item.name}}</div>
+      <div class="age">Age: {{item.age}}</div>
+      <div class="attendence">Attendence: {{item.attendence}}</div>
+    </div>
+
+    <!-- seperating the user workstatus with a footer -->
+    <div class="footer">
+      <div class="userStatus">Working: {{item.userStatus}}</div>
+    </div>
+
+  </div>
+</div>

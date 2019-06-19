@@ -1,0 +1,56 @@
+/* styling the div container */
+
+.container{
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: auto 10px auto 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    box-shadow: 0 0 10px 1px #8f8d8d;
+
+}
+.centerContent{
+    width: 100%;
+    margin: auto;
+    height: 318px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly; 
+}
+.contentBox{
+    margin: auto;
+}
+.itemName,.age,.attendence{
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* Style for the footer and buttons  */
+.footer{
+    border: 1px solid black;
+    height: 10%;
+    font-size: 18px;
+}
+
+.btnHomePage {
+    width: 80px;
+    height: 25px;
+    margin-top: 6px;
+    margin-right: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    float: right;
+}
+.btnHomePage:hover {
+    background-color: rgb(245, 80, 80);
+    box-shadow: 0 0 10px 1px #8f8d8d;
+    transition-duration: .5s;
+    color: white;
+}
